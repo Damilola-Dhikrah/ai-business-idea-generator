@@ -1,6 +1,6 @@
 AI Business Idea Generator
 
-A simple Streamlit app: enter a niche/industry and it generates 3 concise startup ideas — each with a Pitch, Target Audience, Revenue Model, and Execution Steps (plus optional Validation).
+A simple Streamlit app: enter a niche/industry and it generates 3 concise startup ideas, each with a Pitch, Target Audience, Revenue Model, and Execution Steps (plus optional Validation).
 
 Runs locally with Ollama (free) and can also use OpenAI if you add an API key.
 
@@ -48,12 +48,6 @@ How to Run Locally:
 
 1\) Clone \& enter
 
-bash
-
-Copy
-
-Edit
-
 git clone https://github.com/<Damilola-Dhikrah>/ai-business-idea-generator.git
 
 cd ai-business-idea-generator
@@ -64,27 +58,11 @@ cd ai-business-idea-generator
 
 Windows (PowerShell):
 
-
-
-bash
-
-Copy
-
-Edit
-
 python -m venv .venv
 
 .\\.venv\\Scripts\\Activate
 
 macOS/Linux:
-
-
-
-bash
-
-Copy
-
-Edit
 
 python3 -m venv .venv
 
@@ -92,25 +70,11 @@ source .venv/bin/activate
 
 3\) Install dependencies
 
-bash
-
-Copy
-
-Edit
-
 pip install -r requirements.txt
 
 4\) (Optional) OpenAI setup
 
 Create a .env file (do not commit this file):
-
-
-
-ini
-
-Copy
-
-Edit
 
 OPENAI\_API\_KEY=sk-...
 
@@ -124,25 +88,12 @@ Download: https://ollama.com/download
 
 First run downloads the model (a few GB):
 
-
-
-bash
-
-Copy
-
-Edit
-
 ollama run llama3.2:3b     # then press Ctrl+C to exit once you see the prompt
 
 
 
 6\) Run the app
 
-bash
-
-Copy
-
-Edit
 
 streamlit run app.py
 
@@ -171,13 +122,6 @@ Click Download as TXT to save the results
 Tip: For the smoothest first run, keep a warm model window open:
 
 
-
-bash
-
-Copy
-
-Edit
-
 ollama run llama3.2:3b
 
 \# type: hello
@@ -185,12 +129,6 @@ ollama run llama3.2:3b
 \# leave this window open while using the app
 
 Project Structure
-
-bash
-
-Copy
-
-Edit
 
 app.py            # Streamlit app (JSON prompt, local/OpenAI provider, rendering)
 
@@ -202,17 +140,11 @@ README.md         # This file
 
 examples/
 
-&nbsp; ├─ screenshot.png
+├─ screenshot.png
 
-&nbsp; └─ sample\_output.txt
+ └─ sample\_output.txt
 
 Requirements
-
-shell
-
-Copy
-
-Edit
 
 streamlit
 
@@ -274,13 +206,7 @@ Keep your .env out of git (see .gitignore below).
 
 
 
-.gitignore (already included)
-
-markdown
-
-Copy
-
-Edit
+.gitignore
 
 .env
 
@@ -288,15 +214,13 @@ Edit
 
 \_\_pycache\_\_/
 
-\*.pyc
-
 .streamlit/
 
 examples/\*.tmp
 
 
 
-Meets the Assignment Criteria:
+Meets the Criteria:
 
 
 
